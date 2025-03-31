@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Overload</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"> 
+            <img src="images/gameoverload.png" alt="Game 1"> 
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Reviews e Lançamentos</a></li>
+                    <li><a href="#">História Completa</a></li>
+                    <li><a href="#">Relatos e Experiências</a></li>
+                   <li><a href="gameOverload.html">Game Overload?</a></li> 
+                </ul>
+                  <div class ="github">
+            <a href="https://github.com/minkiyuu" target="_blank"> <ion-icon name="logo-github"></ion-icon> </a>
+                  </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Descubra as melhores análises de games</h1>
+            <p>Opiniões sinceras e reviews detalhadas dos jogos mais populares.</p>
+            <a href="https://www.instagram.com/ayumi_dri/" target="_blank" class="btn">@ayumi_dri <ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+    </section>
+
+    <section class="posts">
+        <div class="container">
+            <h2>Em Destaque:</h2>
+            <div class="post-grid">
+                <article class="post">
+                    <img src="https://imagizer.imageshack.com/v2/1360x765q70/924/SJTD10.jpg" alt="Game 1">
+                    <h3>Cyberpunk 2077: Phantom Liberty</h3>
+                    <p>ASCENSÃO: Confira Como foi Acompanhar TODOS os Patches de Cyberpunk 2077!</p>
+                    <a href="#">Leia mais</a>
+                </article>
+                <article class="post">
+                    <img src="images/tekken8.jpeg" alt="Game 2">
+                    <h3>Tekken 8</h3>
+                    <p>SAGA MISHIMA: Tekken 8 Atendeu as Expectativas?</p>
+                    <a href="#">Leia mais</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="list"> 
+        <div class="container"> 
+            <h2>Conteúdos Recentes:</h2>
+            <div class="blogs-grid">
+                <article class="blogs">
+                    <h3>Cyberpunk 2077: Phantom Liberty</h3>
+                    <p>ASCENSÃO: Confira Como foi Acompanhar TODOS os Patches de Cyberpunk 2077!</p>
+                    <a href="#">Leia mais</a>
+                </article>
+                <article class="blogs">
+                    <h3>Tekken 8</h3>
+                    <p>SAGA MISHIMA: Tekken 8 Atendeu as Expectativas?</p>
+                    <a href="#">Leia mais</a>
+                </article>
+                <article class="blogs">
+                    <h3>Cyberpunk 2077: Phantom Liberty</h3>
+                    <p>ASCENSÃO: Confira Como foi Acompanhar TODOS os Patches de Cyberpunk 2077!</p>
+                    <a href="#">Leia mais</a>
+                </article>
+                <article class="blogs">
+                    <h3>Tekken 8</h3>
+                    <p>SAGA MISHIMA: Tekken 8 Atendeu as Expectativas?</p>
+                    <a href="#">Leia mais</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+           <strong> <p>© 2025 Game Overload | MinkiYUU </p> </strong>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector(".hero");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+    
+</body>
+</html>
