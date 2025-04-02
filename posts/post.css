@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  padding: 0 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 14px;
+}
+
+.github {
+  position: absolute;
+  right: 286px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 42px;
+  color: #140028;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 200px;
+  transform: translateY(-50%);
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+  margin: 40px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 160px 20px 20px;
+  background-color: #140028;
+  color: white;
+  max-width: 100%;
+  width: 100vw;
+  min-height: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Espaçamento entre o banner e o hero */
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 350px; /* Ajuste da altura para espaçamento */
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/cyberpunkbanner.png");
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+  z-index: -1;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Conteúdo */
+.blog-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.content p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.content p:last-child {
+  margin-bottom: 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.highlite-container {
+  background: #140028; /* Fundo roxo */
+  border-radius: 12px; /* Bordas arredondadas */
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombras para dar profundidade */
+  margin: auto;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Centraliza o conteúdo */
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  gap: 15px;
+  width: fit-content;
+}
+
+.highlite-container p {
+  color: white;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 24px;
+}
+
+.highlite-video {
+  border-radius: 0; /* Remove bordas arredondadas */
+  padding: 18px 0; /* Espaçamento apenas vertical */
+  box-shadow: none;
+  margin: 0;
+  width: 70%;
+  max-width: 800px;
+  align-items: center;
+}
+
+.highlite-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  display: flex;
+}
+
+/* Rodapé */
+footer {
+  background: #28283c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
