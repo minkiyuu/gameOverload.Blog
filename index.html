@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Overload</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,13 +13,13 @@
     <header>
         <div class="container">
             <div class="logo"> 
-            <img src="images/gameoverload.png" alt="Game 1"> 
+                <a href="/"> <img src="images/gameoverload.png" alt="Game 1"> </a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Reviews e Lançamentos</a></li>
-                    <li><a href="#">História Completa</a></li>
-                    <li><a href="#">Relatos e Experiências</a></li>
+                    <li><a href="/pages/categories/reviews.html"class="menu-item" data-category="reviews">Reviews e Lançamentos</a></li>
+                    <li><a href="/pages/categories/experiences.html" class="menu-item" data-category="experiences">Relatos e Experiências</a></li>
+                    <li><a href="/pages/categories/lists.html"class="menu-item" data-category="lists">Listas e Recomendações</a></li>
                    <li><a href="gameOverload.html">Game Overload?</a></li> 
                 </ul>
                   <div class ="github">
@@ -42,10 +42,10 @@
             <h2>Em Destaque:</h2>
             <div class="post-grid">
                 <article class="post">
-                    <img src="https://imagizer.imageshack.com/v2/1360x765q70/924/SJTD10.jpg" alt="Game 1">
-                    <h3>Cyberpunk 2077: Phantom Liberty</h3>
-                    <p>ASCENSÃO: Confira Como foi Acompanhar TODOS os Patches de Cyberpunk 2077!</p>
-                    <a href="#">Leia mais</a>
+                    <img src="/images/cyberpunk.jpg" alt="Game 1">
+                    <h3>Como foi Acompanhar TODOS os Patches de Cyberpunk 2077!</h3>
+                    <p>Cyberpunk 2077 realmente teve sua redenção?</p>
+                    <a href="/pages/blogs/cyberpunk.html">Leia mais</a>
                 </article>
                 <article class="post">
                     <img src="images/tekken8.jpeg" alt="Game 2">
@@ -58,10 +58,10 @@
     </section>
     <section class="list"> 
         <div class="container"> 
-            <h2>Conteúdos Recentes:</h2>
+          <h2>Conteúdos Recentes:</h2>
             <div class="blogs-grid">
-                <article class="blogs">
-                    <h3>Cyberpunk 2077: Phantom Liberty</h3>
+              <article class="blogs">
+                  <!----    <img src="/images/cyberpunk.jpg" alt="Game 1"> <h3>Cyberpunk 2077: Phantom Liberty</h3>
                     <p>ASCENSÃO: Confira Como foi Acompanhar TODOS os Patches de Cyberpunk 2077!</p>
                     <a href="#">Leia mais</a>
                 </article>
@@ -78,7 +78,7 @@
                 <article class="blogs">
                     <h3>Tekken 8</h3>
                     <p>SAGA MISHIMA: Tekken 8 Atendeu as Expectativas?</p>
-                    <a href="#">Leia mais</a>
+                    <a href="#">Leia mais</a> --> 
                 </article>
             </div>
         </div>
@@ -91,7 +91,7 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script>
+   <!--<script>
         window.addEventListener("scroll", function() {
             const header = document.querySelector(".hero");
             if (window.scrollY > 50) {
@@ -100,7 +100,9 @@
                 header.classList.remove("scrolled");
             }
         });
-    </script>
-    
+    </script> --> 
+    <script src="js/ui.js"></script> 
+<script src="js/content.js"></script> 
+<script src="js/main.js"></script> 
 </body>
 </html>
