@@ -1,16 +1,31 @@
-
 document.addEventListener("DOMContentLoaded", function () {
-    renderPosts(); // Sempre renderiza os posts recentes na Home
-
-    // Adiciona evento de clique aos botões de categoria
+    renderPosts(); // se você estiver usando isso
+  
+    // Evento nos botões de categoria
     document.querySelectorAll(".menu-item").forEach(item => {
-        item.addEventListener("click", function (event) {
-            const category = this.getAttribute("data-category");
-            if (!category) return; // Se não houver categoria, apenas retorna
-
-            // Redireciona para a página correta da categoria
-            window.location.href = `/pages/categories/${category}.html`;
-        });
+      item.addEventListener("click", function () {
+        const category = this.getAttribute("data-category");
+        if (!category) return;
+        window.location.href = `/pages/categories/${category}.html`;
+      });
     });
-});
-
+  
+    // Menu hamburguer
+    const hamburguer = document.querySelector('.hamburguer');
+    const menuMobile = document.getElementById('menuMobile');
+    const closeMenu = document.getElementById('closeMenu');
+  
+    if (hamburguer && menuMobile) {
+      hamburguer.addEventListener('click', function () {
+        menuMobile.classList.toggle('active');
+      });
+    }
+  
+    // Fechar menu com o X
+    if (closeMenu && menuMobile) {
+      closeMenu.addEventListener('click', function () {
+        menuMobile.classList.remove('active');
+      });
+    }
+  });
+  
